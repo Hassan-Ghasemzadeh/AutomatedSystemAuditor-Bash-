@@ -52,3 +52,16 @@ audit_security(){
         log_message "CRITICAL" "Firewall is INACTIVE!"
     fi
 }
+
+# 5. Monitor Resources
+check_resources() {
+    log_message "INFO" "Checking disk usage..."
+    df -h | grep '^/dev/' | while read -r line; do
+        usage=$(echo "$line" | awk '{print $5}' | sed 's/%//')
+        partition=$(echo "$line" | awk '{print $6}')
+        
+        if [ "$usage" -ge "$DISK_THRESHOLD" ]; then
+            log_message "ALERT" "Partition $partition is at $usage% capacity!"
+        fi
+    done
+}

@@ -45,7 +45,7 @@ perform_backup() {
 
 send_report() {
     log_message "INFO" "Sending report to $ADMIN_EMAIL..."
-    # mail -s "Fedora Audit Report - $(hostname)" "$ADMIN_EMAIL" < "$LOG_FILE"
+    mail -s "Fedora Audit Report - $(hostname)" "$ADMIN_EMAIL" < "$LOG_FILE"
     log_message "INFO" "Report dispatched successfully."
 }
 

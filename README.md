@@ -32,18 +32,3 @@ Bash
 Contributions are welcome! If you'd like to add features like Slack/Telegram notifications or cloud backup integration, feel free to open a Pull Request.
 
 Developed by [Hassan Ghasemzadeh] Passionate about Linux Automation and DevOps Excellence.
-
-
----
-
-### 💼 How to describe this on your Resume
-
-Under your **Projects** or **Experience** section, use these bullet points:
-
-**Fedora Infrastructure Automation Tool (Bash/Shell)**
-* Developed a modular Bash framework to automate system maintenance and security auditing for Fedora/RHEL environments.
-* Implemented automated backup routines and security patch monitoring using `dnf` and `SELinux` integration.
-* Reduced manual system check time by 90% through scheduled cron-based automation and centralized logging.
-* Engineered a dedicated **Test Suite** to validate script integrity, ensuring zero-fail execution in production-like environments.
-
----

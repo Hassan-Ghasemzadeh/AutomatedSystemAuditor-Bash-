@@ -9,7 +9,9 @@
 # =================================================================
 
 LOG_DIR="/var/log/sys_audit"
+BACKUP_DIR="/backups/system_config"
 LOG_FILE="$LOG_DIR/audit_$(date +%Y%m%d).log"
+BACKUP_FILE="$BACKUP_DIR/etc_backup_$(date +%Y%m%d).tar.gz"
 DISK_THRESHOLD=80
 
 # Initialize environment
